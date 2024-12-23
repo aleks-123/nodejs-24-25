@@ -187,3 +187,58 @@ console.log(filtriraniStudenti);
 // da kreirate horoskop funkcija - parametar mesec(bonus i denovi)
 //da kreirame funkcija sto presmetuvat plostina na pravoaglonik
 // da kreirame funkcija sto presmetuva perimetar na pravoagolnil
+
+//! Kopiranje na array
+const array1 = [1, 2, 5, 2, 3, 5];
+const array3 = [1, 1, 1, 2, 3, 5];
+const array2 = [...array1, ...array3, 2, 3, 7, 6, 7, 3];
+
+console.log(array2);
+
+const obj1 = {
+  predmet1: 'prv',
+  predmet2: 'vtor',
+};
+
+const kopijaObj1 = {
+  ...obj1,
+};
+
+const obj2 = {
+  predmet3: 'tret',
+  predmet4: 'cetvrt',
+};
+
+const obj3 = { ...obj1, ...obj2 };
+console.log(obj3);
+
+const primer = {
+  jabolko: 30,
+  cveklo: 10,
+  limun: 70,
+};
+
+const novPrimer = {
+  ...primer,
+  jabolko: 40,
+  jabolko: 50,
+  cveklo: 20,
+  limutus: 5,
+};
+console.log(novPrimer);
+////////
+
+//Destruction
+const arr1 = [1, 2, 3, 6, 7, 8, 4, 4, 4];
+const [a, b, ...nebitniParametri] = arr1;
+console.log(a);
+console.log(b);
+console.log(nebitniParametri);
+
+const predmet = {
+  produkt: 'Piperka',
+  cena: 300,
+};
+
+const { cena: kilo, produkt: zelencuk } = predmet;
+console.log(zelencuk, kilo);
