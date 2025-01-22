@@ -1,0 +1,32 @@
+[
+  {
+    "ime": "Mitre",
+    "grad": "Shtip",
+    "prosek": 9
+  },
+  {
+    "ime": "Riste",
+    "grad": "Ohrid",
+    "prosek": 5
+  },
+  {
+    "ime": "Bibe",
+    "grad": "Veles",
+    "prosek": 7
+  },
+  {
+    "ime": "Vasko",
+    "grad": "Bitola",
+    "prosek": 9
+  },
+  {
+    "ime": "Blazo",
+    "grad": "Gevgelija",
+    "prosek": 10
+  },
+  {
+    "ime": "Mihaela",
+    "grad": "Gostivar",
+    "prosek": 8
+  }
+]
