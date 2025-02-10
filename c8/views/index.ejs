@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student webpage</title>
+    <link rel="stylesheet" href="global.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <h2>Ime: <%= ime %> <%= prezime %></h2>
+    <h3>Lista na gradovi</h3>
+    <ul>
+      <% niza.forEach(grad => { %>
+      <li><%= grad %></li>
+      <% }); %>
+    </ul>
+    <h3>Lista na studenti</h3>
+    <table border="2" width="100%">
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Prosek</th>
+      </tr>
+      <% studenti.forEach(s => { %>
+      <tr>
+        <td><%= s.ime %></td>
+        <td><%= s.prezime %></td>
+        <td><%= s.prosek %></td>
+      </tr>
+      <% }); %>
+    </table>
+    <hr />
+    <h2>Add new student:</h2>
+    <form action="/" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" name="ime" id="ime" required /> <br />
+      <label for="prezime">Prezime:</label>
+      <input type="text" name="prezime" id="prezime" required /> <br />
+      <label for="prosek">Prosek:</label>
+      <input type="number" name="prosek" id="prosek" required /> <br />
+      <input type="submit" value="Dodadi student" />
+    </form>
+  </body>
+</html>
